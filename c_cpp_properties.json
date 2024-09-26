@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",  // ワークスペース内のすべてのフォルダーを含める
+        "C:/msys64/mingw64/include/**" // MinGWのincludeパスを追加
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ], // 必要な定義を追加
+      "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+      "cStandard": "c11", // 使用するC標準を設定
+      "cppStandard": "c++17", // 使用するC++標準を設定
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        "-fdiagnostics-color=always" // エラーメッセージをカラー化するオプション
+      ]
+    }
+  ],
+  "version": 4
+}
